@@ -50,21 +50,20 @@ def problem4(number_of_stairs, step_size, starting_point, window):
     starting_point.attach_to(window)
 
     for k in range(number_of_stairs):
-
-        line1 = rg.Line(rg.Point(px + k * HGC, py - (k+1) * HGC), rg.Point(px + (k + 1) * HGC, py - (k + 1) * HGC))
-    line1.thickness = 3
-    line1.color = 'black'
-    line1.attach_to(window)
-    point1 = rg.Point(px + (number_of_stairs) * HGC, py - (number_of_stairs) * HGC)
-
+        line1 = rg.Line(rg.Point(px + k * HGC, py - (k + 1) * HGC),
+                        rg.Point(px + (k + 1) * HGC, py - (k + 1) * HGC))
+        line1.thickness = 3
+        line1.color = 'black'
+        line1.attach_to(window)
+    point1 = rg.Point(px + (number_of_stairs) * HGC,py - (number_of_stairs) * HGC)
     point1.attach_to(window)
 
     for k in range(number_of_stairs):
-        line2 = rg.Line(rg.Point(px + (k) * HGC, py - k * HGC), rg.Point(px + (k) * HGC, py - (k+1) * HGC))
-    line2.thickness = 3
-    line2.color = 'magenta'
-    line2.attach_to(window)
-
+        line2 = rg.Line(rg.Point(px + (k) * HGC, py - k * HGC),
+                        rg.Point(px + (k) *HGC, py - (k + 1) * HGC))
+        line2.thickness = 3
+        line2.color = 'magenta'
+        line2.attach_to(window)
     window.render()
     """
     See   problem4_picture.pdf   in this project for pictures
@@ -90,7 +89,7 @@ def problem4(number_of_stairs, step_size, starting_point, window):
       :type window:            rg.RoseWindow
     """
     # -------------------------------------------------------------------------
-    # DONE: 2. Implement and test this function.
+    # TODO: 2. Implement and test this function.
     #          Tests have been written for you (above).
     # IMPORTANT: For PARTIAL CREDIT, you can draw just the black "bottoms"
     #            of the stair steps.
