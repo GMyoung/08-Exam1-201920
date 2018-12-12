@@ -77,7 +77,7 @@ def problem1(square, thickness, window):
     circle = rg.Circle(rg.Point(x, y + LOL), LOL * 0.5)
 
     circle.fill_color = square.fill_color
-    
+
     circle.outline_thickness = thickness
 
     line = rg.Line(circle.center, rg.Point((x - LOL * 0.5), y))
