@@ -68,21 +68,28 @@ def problem1(square, thickness, window):
     square.attach_to(window)
 
 
-    side = square.length_of_each_side
+    LOL= square.length_of_each_side
 
     x = square.center.x
 
     y = square.center.y
 
-    circle = rg.Circle(rg.Point(x, y + side), side * 0.5)
+    circle = rg.Circle(rg.Point(x, y + LOL), LOL * 0.5)
 
     circle.fill_color = square.fill_color
+    
     circle.outline_thickness = thickness
-    line = rg.Line(circle.center, rg.Point((x - side * 0.5), y))
+
+    line = rg.Line(circle.center, rg.Point((x - LOL * 0.5), y))
+
     line.thickness = thickness
+
     line.color = square.outline_color
+
     circle.attach_to(window)
+
     line.attach_to(window)
+
     window.render()
     """
     See   problem1_picture.pdf   in this project for pictures

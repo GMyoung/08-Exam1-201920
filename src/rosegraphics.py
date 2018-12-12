@@ -1168,7 +1168,7 @@ class Line(_Shape, _ShapeWithThickness):
        line.move_by(-50, 60)
     """
 
-    def __init__(self, start, end):
+    def __init__(self, start: object, end: object) -> object:
         """
           :type  start:  rg.Point
           :type  end:    rg.Point

@@ -13,6 +13,37 @@ def main():
 
 
 def test_factor_sum():
+    # Test 1
+    expected = 4
+    actual = factor_sum(3)
+    print()
+    print('Expected:', expected)
+    print('Actual:',actual)
+    # Test 2
+    expected = 4
+    actual = factor_sum(13)
+    print()
+    print('Expected:', expected)
+    print('Actual:', actual)
+    # Test 3
+    expected = 10
+    actual = factor_sum(19)
+    print()
+    print('Expected:', expected)
+    print('Actual:', actual)
+    # Test 4
+    expected = 11
+    actual = factor_sum(29)
+    print()
+    print('Expected:', expected)
+    print('Actual:', actual)
+    # Test 5
+    expected = 10
+    actual = factor_sum(12)
+    print()
+    print('Expected:', expected)
+    print('Actual:', actual)
+
     """ Tests the   factor_sum   function. """
     ###########################################################################
     #  Done: 2. Implement this TEST function, as follows:
@@ -47,11 +78,6 @@ def test_factor_sum():
 
 
 def factor_sum(n):
-    number = 0
-    for k in range (n):
-        if n / 2 == 0
-            number = number + n / 2
-    return number
 
     """
     Given a positive integer n,
